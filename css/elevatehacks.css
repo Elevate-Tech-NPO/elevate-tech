@@ -812,7 +812,10 @@ details[open] summary::before {
   background-color: white;
   border-radius: 20px;
   padding: 20px 10px;
+  display: grid;
+  grid-gap: 10px;
 }
+
 
 /* sponsors */
 .sponsor-msg {
