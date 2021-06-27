@@ -29,7 +29,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("schedule-slide");
   var dots = document.getElementsByClassName("schedule-dot");
-  var day1 = 14;
+  var day1 = 13;
 
   if (n > slides.length) {
     slideIndex = 1
@@ -55,12 +55,15 @@ function showSlides(n) {
 var events = [{ name: "Zoom Opening", description: "Zoom Opening" },
 { name: "Opening Ceremony + Theme Declaration", description: "Opening Ceremony + Theme Declaration" },
 { name: "Team Formation", description: "Team Formation" },
+{ name: "Hackathons 101!", description: "Hackathons 101!" },
+{ name: "Creative Coding with Python - ImagiLabs", description: "Creative Coding with Python - ImagiLabs" },
 { name: "Intro to GitHub", description: "Intro to GitHub" },
 { name: "Intro to Web Development (Qoom)", description: "Intro to Web Development (Qoom)" },
-{ name: "AI Ethics with Ria Cheruvu", description: "AI Ethics with Ria Cheruvu" },
+{ name: "AI Ethics ft. College Pressors", description: "AI Ethics ft. College Pressors" },
 { name: "Women in Tech Panel", description: "Women in Tech Panel" },
 { name: "College Tech Leaders Panel", description: "College Tech Leaders Panel" },
-{ name: "Intro to iOS  and Android Development", description: "Intro to iOS  and Android Development" },
+{ name: "Intro to iOS Development", description: "Intro to iOS Development" },
+{ name: "Intro to Android Development", description: "Intro to Android Development" },
 { name: "Creative Coding with Python (ImagiLabs)", description: "Creative Coding with Python (ImagiLabs)" },
 { name: "Pitching Basics", description: "Pitching Basics" },
 { name: "Zoom Reopens", description: "Zoom Reopens" },

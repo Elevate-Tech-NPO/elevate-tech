@@ -34,6 +34,9 @@
   margin: auto;
   background-color: #c5f1ff;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .involvement-btns {
@@ -42,26 +45,15 @@
   align-items: center;
   margin: auto;
   padding-bottom: 30px;
-  width: 65%;
+  gap: 200px;
 }
 
 .intro-btn-a {
   margin: auto;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .intro-img {
     width: 80%;
-  }
-
-  .involvement-btns {
-    width: 80%;
-  }
-}
-
-@media (max-width: 800px) {
-  .intro-img {
-    margin: 50px;
-    width: 85%;
   }
 
   .involvement-btns-container {
@@ -70,7 +62,16 @@
   }
 
   .involvement-btns {
+    width: 100%;
+    gap: 0;
     display: grid;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro-img {
+    margin: 50px;
+    width: 85%;
   }
 }
 
