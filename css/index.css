@@ -242,13 +242,12 @@
 /* impact*/
 .our-impact-container {
   background-color: #ffc8dd;
-  width: 85%;
+  width: 90%;
   font-size: 18px;
   border-radius: 20px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 30px;
   grid-gap: 50px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -256,6 +255,7 @@
 .impact {
   margin: auto;
   text-align: center;
+  padding: 30px;
 }
 
 .impact-img {
