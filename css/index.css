@@ -69,7 +69,43 @@
 
 /* about */
 
-/* impact */
+.about-container{
+background-color: #C5F1FF;
+width: 792px:
+height: 206px;
+padding: 15px;
+border-radius: 10px
+}
+/* impact*/
+.our-impact-container{
+background-color: #FFC8DD;
+width: 1400px;
+font-family: roboto;
+font-size:18px;
+height: 179px;
+}
+
+.imagetext1{
+font-family: roboto;
+}
+.column{
+  float: left;
+  width: 30%;
+  padding: 12px;
+}
+.imagetext{
+ text-align: center;
+
+}
+.image table::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (min-width:1105px){
+.image table{
+display: flex;
+}}
 
 /* initiatives */
 .subheading {
