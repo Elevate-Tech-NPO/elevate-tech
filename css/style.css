@@ -23,12 +23,14 @@ ul {
 }
 
 .link {
-  color: rgb(108, 108, 248);
+  color: rgb(108, 108, 248) !important;
+  font-weight: 600;
+  text-decoration: underline;
   transition: color 0.5s;
 }
 
 .link:hover {
-  color: #0084ff;
+  color: #0084ff !important;
   transition: color 0.5s;
 }
 
