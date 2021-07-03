@@ -328,6 +328,7 @@
 .camp-resources {
   font-size: 20px;
   text-decoration: underline solid transparent;
+  color: black;
   transition: text-decoration 0.5s ease;
 }
 
