@@ -35,6 +35,7 @@
   background-color: #c5f1ff;
   padding-bottom: 50px;
 }
+
 .hackathon-countdown-title {
   font-size: 35px;
   text-align: center;
@@ -49,8 +50,13 @@
   font-size: 25px;
 }
 
-.countdown-section {
-  margin: 35px;
+.countdown-sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 700px;
+  gap: 5vw;
 }
 
 .countdown-number {
@@ -68,11 +74,6 @@
   .countdown {
     padding-top: 10px;
     padding-bottom: 25px;
-  }
-
-  .countdown-section {
-    margin: 15px;
-    margin-bottom: 20px;
   }
 
   .hackathon-countdown-title {
