@@ -25,9 +25,65 @@
 .intro-img {
   width: 65%;
   border: 5px solid #ff5757;
-  margin: 80px;
+  margin-top: 80px;
+  margin-bottom: 30px;
   border-radius: 20px;
   box-shadow: 0 3px 6px #ff6f6f, 0 3px 6px #f79c9c;
+}
+
+.countdown {
+  background-color: #c5f1ff;
+  padding-bottom: 50px;
+}
+.hackathon-countdown-title {
+  font-size: 35px;
+  text-align: center;
+}
+
+.hackathon-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  font-size: 25px;
+}
+
+.countdown-section {
+  margin: 35px;
+}
+
+.countdown-number {
+  text-align: center;
+  font-size: 40px;
+  color: #ff6f6f;
+  text-shadow: 2px 2px #ff5757;
+}
+
+.countdown-label {
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .countdown {
+    padding-bottom: 25px;
+  }
+
+  .countdown-section {
+    margin: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .hackathon-countdown-title {
+    font-size: 30px;
+  }
+
+  .countdown-number {
+    font-size: 30px;
+  }
+  .countdown-label {
+    font-size: 25px;
+  }
 }
 
 .involvement-btns-container {
@@ -565,16 +621,20 @@ details {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-summary {list-style: none}
-summary::-webkit-details-marker {display: none; }
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
 
-details summary::before { 
-  content:"▶️"; 
+details summary::before {
+  content: "▶️";
   margin-right: 5px;
 }
 
-details[open] summary::before { 
-  content:"🔽"; 
+details[open] summary::before {
+  content: "🔽";
   margin-right: 5px;
 }
 
@@ -686,7 +746,6 @@ details[open] summary::before {
   display: grid;
   grid-gap: 10px;
 }
-
 
 /* sponsors */
 .sponsor-msg {
