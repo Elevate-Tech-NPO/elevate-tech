@@ -797,8 +797,11 @@ details[open] summary::before {
 
 .speakers-section {
   margin: auto;
-  margin-bottom: 70px;
   width: 90%;
+}
+
+.speakers-section:last-child {
+  margin-bottom: 70px;
 }
 
 .speakers-title {
@@ -807,33 +810,89 @@ details[open] summary::before {
   padding: 20px;
   font-size: 22px;
   text-align: center;
-  margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.speakers-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 30px;
-  width: 100%;
-  margin: auto;
-  margin-top: 25px;
-}
-
-.speaker {
-  border-radius: 20px;
-  background-color: #ac2c2c;
-  height: 150px;
-  display: grid;
+.speaker-container {
+  display: flex;
+  gap: 30px;
   justify-content: center;
   align-items: center;
+  padding: 30px 0;
+}
+
+.speaker-img {
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.speaker-about-container {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ac2c2c;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .speaker-name {
-  font-size: 19px;
+  font-size: 22px;
   color: white;
+  margin-bottom: 15px;
+}
+
+.speaker-about {
+  font-size: 18px;
+  color: white;
+}
+
+.speaker-socials {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.speaker-about-socials {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 20px;
+}
+
+.speaker-social-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon-speaker {
+  color: white;
+}
+
+.social-link-speaker,
+.social-link-speaker:visited {
+  color: white;
+  font-size: 18px;
+  text-decoration: underline solid transparent;
+  transition: text-decoration 0.5s ease;
+}
+
+.social-link-speaker:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.5s ease;
+}
+
+@media (max-width: 1000px) {
+  .speaker-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .speaker-img-container {
+    margin: auto;
+  }
 }
 
 /* team */
