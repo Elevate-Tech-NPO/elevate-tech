@@ -4,7 +4,7 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-countdown = new Date("Aug 13, 2021 11:00:00").getTime();
+countdown = new Date("Aug 13, 2021 20:00:00").getTime();
 
 x = setInterval(function () {
   var now = new Date().getTime();
@@ -83,7 +83,7 @@ var events = [{ name: "Zoom Opening", description: "Zoom Opening" },
 { name: "Intro to iOS Development", description: "Intro to iOS Development" },
 { name: "Intro to Android Development", description: "Intro to Android Development" },
 { name: "Creative Coding with Python (ImagiLabs)", description: "Creative Coding with Python (ImagiLabs)" },
-{ name: "Pitching Basics", description: "Pitching Basics" },
+{ name: "Pitching Basics (aka Hackathon Judging Debrief)", description: "Pitching Basics (aka Hackathon Judging Debrief)" },
 { name: "Zoom Reopens", description: "Zoom Reopens" },
 { name: "Submissions Due", description: "Submissions Due" },
 { name: "Submission Validation", description: "Submission Validation" },
