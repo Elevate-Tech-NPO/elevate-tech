@@ -701,6 +701,7 @@ details[open] summary::before {
   text-align: center;
   font-size: 25px;
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 .prize {
