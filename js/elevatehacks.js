@@ -4,7 +4,7 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-countdown = new Date("Aug 13, 2021 20:00:00").getTime();
+countdown = new Date("Aug 14, 2021 04:00:00").getTime();
 
 x = setInterval(function () {
   var now = new Date().getTime();
