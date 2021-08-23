@@ -71,35 +71,40 @@ function showSlides(n) {
 }
 
 var events = [{ name: "Zoom Opening", description: "Zoom Opening" },
-{ name: "Opening Ceremony", description: "Opening Ceremony and Keynote" },
+{ name: "Opening Ceremony", description: "Opening Ceremony and Keynote", link: "https://www.youtube.com/watch?v=JQTtX4mIx9k&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=1" },
 { name: "Team Formation", description: "Team Formation via Zoom" },
-{ name: "Hackathons 101 by Akshaya Dinesh", description: "Learn to make the best of your hackathon experience from our opening ceremony keynote presenter, Stanford student and entrepreneur Akshaya Dinsesh!" },
+{ name: "Hackathons 101 by Akshaya Dinesh", description: "Learn to make the best of your hackathon experience from our opening ceremony keynote presenter, Stanford student and entrepreneur Akshaya Dinsesh!", link: "https://www.youtube.com/watch?v=JQTtX4mIx9k&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=1" },
 { name: "Creative Coding with Python - ImagiLabs", description: "Creative Coding with Python - ImagiLabs" },
-{ name: "Intro to GitHub", description: "Intro to GitHub with Gauri Nair. Learn how to operate Github and collaborate on your hackathon project!" },
-{ name: "Intro to Web Development (Qoom)", description: "Intro to Web Development with Qoom with Alexandria Bandle. Learn how to build a website from scratch using Qoom's IDE" },
-{ name: "AI Ethics with Ria Cherevu", description: "AI Ethics with Intel researcher Ria Cherevu" },
-{ name: "Women in Tech Panel", description: "Women in Tech Panel: hear from and ask questions to women in the tech industry" },
-{ name: "College Tech Leaders Panel", description: "College Tech Leaders Panel: hear from and ask questions to women studying STEM in college!" },
+{ name: "Intro to GitHub", description: "Intro to GitHub with Gauri Nair. Learn how to operate Github and collaborate on your hackathon project!", link: "https://www.youtube.com/watch?v=3yMr_opRem4&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=5" },
+{ name: "Intro to Web Development (Qoom)", description: "Intro to Web Development with Qoom with Alexandria Bandle. Learn how to build a website from scratch using Qoom's IDE", link: "https://www.youtube.com/watch?v=dc4TgfeGong&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=2"},
+{ name: "AI Ethics with Ria Cherevu", description: "AI Ethics with Intel researcher Ria Cherevu", link: "https://www.youtube.com/watch?v=kNpWDAefUFQ&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=3"},
+{ name: "Women in Tech Panel", description: "Women in Tech Panel: hear from and ask questions to women in the tech industry", link: "https://www.youtube.com/watch?v=bJDqJf64n6k&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=7" },
+{ name: "College Tech Leaders Panel", description: "College Tech Leaders Panel: hear from and ask questions to women studying STEM in college!", link: "https://www.youtube.com/watch?v=yb_7or5j9To&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=6" },
 { name: "Intro to iOS Development", description: "Intro to iOS Development Mikaela Caron. Build your first iOS application using Swift and Xcode!" },
-{ name: "Intro to Android Development", description: "Intro to Android Development" },
-{ name: "Creative Coding with Python (ImagiLabs)", description: "Creative Coding with Python by ImagiMentor Andrea Maggino." },
-{ name: "Pitching Basics (aka Hackathon Judging Debrief)", description: "Pitching Basics (aka Hackathon Judging Debrief) with Director of Outreach, Aanvi Koolwal" },
+{ name: "Intro to Machine Learning", description: "Intro to Machine Learning", link: "https://www.youtube.com/watch?v=-AsT2Qk2ROY&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=8" },
+{ name: "Creative Coding with Python (ImagiLabs)", description: "Creative Coding with Python by ImagiMentor Andrea Maggino.", link: "https://www.youtube.com/watch?v=Vod1YQGTr5k&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=4" },
+{ name: "Pitching Basics (and Hackathon Judging Debrief)", description: "Pitching Basics (and Hackathon Judging Debrief) with Director of Outreach, Aanvi Koolwal", link: "https://www.youtube.com/watch?v=jMH7sTvFu_s&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=9" },
 { name: "Zoom Reopens", description: "Zoom Reopens" },
 { name: "Submissions Due", description: "Submissions Due" },
 { name: "Submission Validation", description: "Submission Validation" },
-{ name: "Intro to LinkedIn & Resume Building", description: "Intro to LinkedIn & Resume Building by influencer and computer science PhD student, Liz Victoria" },
-{ name: "Social Hour & Game Period", description: "Social Hour & Game Period" },
-{ name: "Awards and Closing Ceremony", description: "Awards and Closing Ceremony" }
+{ name: "Intro to LinkedIn &amp; Resume Building", description: "Intro to LinkedIn & Resume Building by influencer and computer science PhD student, Liz Victoria", link: "https://www.youtube.com/watch?v=igUV_POcdtI&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=10"},
+{ name: "Social Hour &amp; Game Period", description: "Social Hour & Game Period" },
+{ name: "Awards and Closing Ceremony", description: "Awards and Closing Ceremony", link: "https://www.youtube.com/watch?v=gufU_iGD3p4&list=PLDFkmHUo2QidJrgeyIIYszy6GCqfIXKMA&index=11" }
 ];
 
 function clickedScheduleRow(row) {
   var eventTitle = row.getElementsByTagName("td")[0].innerHTML;
-
   document.getElementById("event-box-title").innerHTML = eventTitle;
+
   for (i = 0; i < events.length; i++) {
     if (events[i].name === eventTitle) {
       document.getElementById("event-description-text-testing").innerHTML = events[i].description;
-      break;
+      document.getElementById("event-description-link").setAttribute("href", events[i].link);
+      if (events[i].link !== undefined) {
+        document.getElementById("event-description-link").innerHTML = "View the recording here";
+      } else {
+        document.getElementById("event-description-link").innerHTML = "";
+      }
     }
   }
 }

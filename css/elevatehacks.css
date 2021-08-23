@@ -418,6 +418,14 @@
   text-align: left;
 }
 
+.event-recording {
+  color: black;
+}
+
+.event-recording:hover {
+  text-decoration: underline;
+}
+
 .schedules {
   position: relative;
   display: flex;
