@@ -5,8 +5,19 @@ body {
 }
 
 @media screen and (min-width: 1100px) {
-  .container {
+  .ini-container {
     margin: 0px 100px 0px 150px;
+  }
+  .imp-container {
+    margin: 0px;
+    padding: 0px;
+  }
+  .imp-img-1 {
+    margin: auto 40%;
+  }
+  .imp-img-2,
+  .imp-img-3 {
+    margin: auto 35%;
   }
 }
 nav {
@@ -115,8 +126,18 @@ nav {
     justify-content: center;
     padding-right: 22%;
   }
+  .imp-img-1 {
+    margin: auto 30%;
+  }
+  .imp-img-2,
+  .imp-img-3 {
+    margin: auto 25%;
+  }
   h1 {
     margin-right: 30%;
+  }
+  .imp-content {
+    text-align: center;
   }
 }
 
@@ -427,4 +448,22 @@ button:hover .button-text {
 .ini-image {
   margin-top: 80px;
   border-radius: 50px;
+}
+
+.imp-image-block {
+  padding: 70px 0px;
+}
+
+.imp-content {
+  color: #091156;
+  margin: 100px 100px;
+}
+#testimonial {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #8b8b8b;
 }
