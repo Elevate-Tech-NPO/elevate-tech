@@ -180,6 +180,7 @@ nav {
 @media screen and (max-width: 1500px) {
 }
 .flw {
+  margin-left: 15px;
   background-color: #9ba2e0;
   border: none;
   color: white;
@@ -360,22 +361,20 @@ a[href^="mailto"] {
 }
 
 .resource {
-  margin-right: 60px;
-  background-color: white;
+  background-color: #ffb6b6;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
   line-height: 24px;
   font-size: 16px;
   border: none;
-  color: #fd6584;
-  width: 160px;
-  height: 46px;
+  color: white;
+  border: none;
+  width: 155px;
+  height: 42px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-color: #ffb6b6;
-  border-style: solid;
   border-radius: 25px;
   box-shadow: inset 0 0 0 0 white;
   -webkit-transition: ease-out 0.1s;
@@ -384,11 +383,11 @@ a[href^="mailto"] {
   box-shadow: 1px 2px 4px #c5bebe;
 }
 .btn-link.resource:hover {
-  color: white;
-  background-color: #ffb6b6;
-  border-style: solid;
+  color: #ffb6b6;
+  background-color: white;
   border-color: #ffb6b6;
-  box-shadow: inset 400px 0 0 0 #ffb6b6;
+  border-style: solid;
+  box-shadow: 1px 2px 4px white;
   text-decoration: none !important;
 }
 
@@ -453,7 +452,7 @@ button.learn-more .button-text {
   right: 0;
   bottom: 0;
   padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
+  margin: 0 0 0 2.8rem;
   color: #091156;
   font-weight: 700;
   line-height: 1.6;
@@ -461,7 +460,7 @@ button.learn-more .button-text {
   text-transform: uppercase;
 }
 button:hover .circle {
-  width: 100%;
+  width: 105%;
 }
 button:hover .circle .icon.arrow {
   background: #fff;
@@ -587,7 +586,7 @@ button:hover .button-text {
   top: 30px;
   left: 149px;
 }
-.flw-content {
+.flw-content-1 {
   font-style: normal;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -612,4 +611,20 @@ button:hover .button-text {
   text-align: center;
   align-items: center;
   padding: 50px;
+}
+.flw-content-2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  color: #091156;
+}
+#fellow-text {
+  background-color: #ffd8cf;
+}
+.flw-block-2 {
+  text-align: center;
+  position: absolute;
 }
